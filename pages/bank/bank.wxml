@@ -1,0 +1,16 @@
+<!--pages/bank/bank.wxml-->
+<view class="swiper-container">
+  <swiper 
+    vertical="{{vertical}}"
+    indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item class="swiper-layout">
+        <image class="backgroud-image" src="{{item}}" mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>

@@ -1,0 +1,35 @@
+<!--pages/goods/myorder/myorder.wxml-->
+<view class="order-container">
+  <view class="orders" wx:for="{{orders}}">
+    <view class="order-info">
+      <view class="store-orderid">
+        <view class="store-name">
+          <text>{{item.storeName}}</text>
+        </view>
+        <view class="order-code">
+          <text>订单编号：</text>
+          <text>{{item.orderId}}</text>
+        </view>
+      </view>
+      <view class="order-status">{{item.orderStatus == 2? "交易关闭":"待收货"}}</view>
+    </view>
+    <view class="order" wx:for="{{item.subOrders}}" wx:for-item="subOrder">
+      <image class="good-img" src="{{subOrder.goodImg}}"></image>
+      <view class="one-order-info">
+        <view class="name-price">
+          <text>{{subOrder.goodName}}</text>
+          <text class="price">{{subOrder.price}}</text>
+        </view>
+
+        <view class="desc-count">
+          <text>{{subOrder.goodDescription}}</text>
+          <text>X{{subOrder.count}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="total">
+      <text>合计：</text>
+      <text class="total-price">￥{{item.totalPrice}}</text>
+    </view>
+  </view>
+</view>

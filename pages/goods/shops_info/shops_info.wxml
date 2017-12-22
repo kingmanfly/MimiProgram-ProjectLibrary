@@ -1,0 +1,31 @@
+
+<!--pages/goods/shops_info/shops_info.wxml-->
+<scroll-view scroll-y="true">
+  <view class="header">
+    <image src="http://106.14.176.248/kingman/onlineFlower/images/flower_lily.png"></image>
+    <text>联系我们</text>
+  </view>
+  <view class="shop_info">
+    <view>
+      <image class="icon_local" src="http://106.14.176.248/kingman/onlineFlower/images/icon_local.png"></image>
+      <text>上海市闵行区紫月路506号</text>
+    </view>
+    <view class="shop__phone">
+      <image class="icon_local" src="/images/phone.png"></image>
+      <text>17321292727</text>
+    </view>
+    <view class="shop_dec">鲜花在线预订成立于2008年,公司旗下包括O2O,B2C业务板块,在线下整合了全国12000多家合作与加盟花店业务覆盖全国600多个城市</view>
+  </view>
+  <view class="shops_list">
+    <block wx:for="{{shops}}">
+      <view class="shop_item">
+        <text>{{item.shopname}}</text>
+        <view class="distance">
+          <image class="icon_distance" src="http://106.14.176.248/kingman/onlineFlower/images/icon_local.png"></image>
+          <text>{{index+1}}km</text>
+        </view>
+      </view>
+      <view class="shop_item_address">{{item.shopaddress}}</view>
+    </block>
+  </view>
+</scroll-view>

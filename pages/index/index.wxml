@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<import src="cell.wxml" />
+<view class="page-container2">
+  <view>
+    <view class="swiper-container">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banners}}" wx:key="item">
+          <swiper-item class="swiper-layout">
+            <image class="backgroud-image" src="{{item.imgUrls}}" mode="scaleToFill" />
+            <view class="display-text">
+              <text>微信小程序开发及服务<text class="hightlight-color">Kim</text>平台</text>
+              <text class="advice-desc">{{item.dragon}}</text>
+              <text class="enter" bindtap="onEnter">立即进入</text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+
+    </view>
+    <view>
+      <scroll-view scroll-y="true">
+        <view wx:for="{{pageItems}}" wx:key="{{text}}">
+          <view class="pages-row">
+            <template is="cell" data="{{...item[0],cellHeight}}" />
+            <template is="cell" data="{{...item[1],cellHeight}}" />
+            <template is="cell" data="{{...item[2],cellHeight}}" />
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="contact">
+    <view class="telephone" bindtap="onDail">
+      <image class="img-phone" src="http://106.14.176.248/kingman/myApplication/images/icon_phone.png"></image>
+      <text>微信同号: </text>
+      <text>173 2129 2727</text>
+    </view>
+    <view class="telephone" open-type="contact">
+      <contact-button type="default-light" size="30" session-from="weapp">
+      </contact-button>
+      <text>客服</text>
+    </view>
+  </view>
+
+</view>

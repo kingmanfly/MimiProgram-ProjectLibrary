@@ -1,0 +1,91 @@
+/* pages/goods/myorder/myorder.wxss */
+
+.order-container {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+}
+
+.orders {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background: white;
+  font-size: 34rpx;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.order-code {
+  color: #dedede;
+  font-size: 30rpx;
+}
+
+.store-orderid {
+  padding: 20rpx;
+  line-height: 120%;
+}
+
+.store-name {
+  font: 40rpx "微软雅黑";
+  margin-bottom: 15rpx;
+}
+
+.order-status {
+  margin: 20rpx;
+  color: #f9467e;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx;
+  background: #fafafa;
+  margin: 10rpx;
+}
+
+.one-order-info {
+  width: 100%;
+  line-height: 130%;
+  padding: 10rpx;
+}
+
+.name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desc-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: #dedede;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  width: 95%;
+  padding: 10rpx;
+}
+
+.good-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.total-price {
+  font-size: 40rpx;
+}
+.price{
+  color: #f9467e;
+}

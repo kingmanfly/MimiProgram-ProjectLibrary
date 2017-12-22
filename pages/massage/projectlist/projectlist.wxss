@@ -1,0 +1,51 @@
+/* pages/projectlist/projectlist.wxss */
+@import "project-item/project-item-template.wxss";
+.scroll-view_H{
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroll-view-item_H{
+  width: 20%;
+}
+.swiper-tab {
+  border-bottom: 2rpx solid #e2e2e2;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  z-index: 100;
+  background: #e2e2e2;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  color: #777;
+}
+
+.on {
+  color: #09cc6f;
+  border-bottom: 5rpx solid #09cc6f;
+}
+
+.swiper-box {
+  display: block;
+  width: 100%;
+}
+swiper{
+  height: 100vh;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20rpx;
+  border-bottom: 1px solid #dfe0e1;
+}
+.member{
+  margin-top: 80rpx;
+}
+
+.member text{
+  margin-top: 20rpx;
+}

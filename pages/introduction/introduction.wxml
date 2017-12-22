@@ -1,0 +1,11 @@
+<!--pages/introduction/introduction.wxml-->
+<view class="container">
+  <text>1. 前期沟通</text>
+  <text>2. 产品规划</text>
+  <text>3. 需求讨论</text>
+  <text>4. 设计文档</text>
+  <text>5. 程序开发</text>
+  <text>6. 质量检测</text>
+  <text>7. 验收交付</text>
+  <text>8. 售后服务</text>
+</view>

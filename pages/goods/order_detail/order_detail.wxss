@@ -1,0 +1,136 @@
+/* pages/goods/order_detail/order_detail.wxss */
+.address{
+  width:100%;
+  display: -webkit-flex;
+  flex-direction: row; /*row横向  column纵向*/
+  padding: 20rpx 0 18rpx 20rpx;
+  font-size: 30rpx;
+}
+.address image{
+    width:20px;
+    height:30px;
+}
+/*华丽的分割线*/
+.divide_line {
+  width: 100%;
+  height: 20rpx;
+  background: #f0f0f0;
+}
+.product_name{
+  position:absolute;
+  top:0px;
+  left:10px;
+  padding:0px;
+  margin:0px
+}
+.price {
+  position:absolute;
+  top:0px;
+  right:20px;
+  padding:0px;
+  margin:0px;
+  color: #f56392;
+}
+.product_dec{
+  position:absolute;
+  bottom:0px;
+  left:10px;
+  padding:0px;
+  margin:0px;
+  color:#8e8e8e;
+}
+.number {
+  position:absolute;
+  bottom:0px;
+  right:20px;
+  padding:0px;
+  margin:0px;
+  color:#8e8e8e;
+}
+.order_amount{
+  padding-right: 20px;
+}
+.view_outside {
+  width:100%;
+  display: -webkit-flex;
+  flex-direction: row; /*row横向  column纵向*/
+  padding: 20rpx 0 18rpx 20rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #c3c3c3;
+}
+.view_in1 {
+  flex: 1;
+}
+
+.view_in3 {
+  flex: 3;
+}
+.order_no {
+  color: #959595;
+  font-size: 30rpx;
+  padding: 5px 0 10px 10px;
+}
+.order_status{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 30rpx;
+}
+.order_no_inside {
+  margin-top: 5px;
+}
+.view_inside_order {
+  width:100%;
+  display: -webkit-flex;
+  flex-direction: row; /*row横向  column纵向*/
+  padding: 20rpx 0 18rpx 20rpx;
+  font-size: 30rpx;
+}
+.view_inside_order image {
+  width: 80px;
+  height: 60px;
+}
+.order_track{
+  display: flex;
+  margin: 10px;
+  font-size: 25rpx;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.order_track_line{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.order_track_line #selected{
+  width: 50rpx;
+  height: 20rpx;
+}
+.order_track_line #point{
+  width: 20rpx;
+  height: 10rpx;
+}
+.track_line{
+  width: 100%;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  height: 5rpx;
+  background: #f0f0f0;
+}
+.view_aftersales{
+  width: 100%;
+  background: #f0f0f0;
+}
+.aftersales{
+  color: #f56392;
+  font-size: 30rpx;
+  border: 1px solid #f56392;
+  border-radius: 6rpx;
+  padding: 5rpx 10rpx 5rpx 10rpx;
+  float: right;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+}

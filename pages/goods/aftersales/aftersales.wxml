@@ -1,0 +1,9 @@
+<!--pages/goods/aftersales/afterrsales.wxml-->
+<view class="aftersales-container">
+  <image class="person" src="http://106.14.176.248/kingman/onlineFlower/images/customer_service.png"></image>
+  <view class="aftersales-info">
+    <text>尊敬的用户你好</text>
+    <text>有任何问题请联系客服</text>
+    <text class="contact" bindtap="bindTelphoneTap">客服电话 17321292727</text>
+  </view>
+</view>

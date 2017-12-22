@@ -1,0 +1,117 @@
+/**index.wxss**/
+.page-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.pages-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pages-item {
+  position: relative;
+  width: 33%;
+  background-color: #fff;
+  border: #ddd solid 1rpx;
+  padding-top: 16rpx;
+}
+
+.pages-icon-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+}
+
+.pages-icon-wrapper-no-bg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rpx;
+  height: 75%;
+}
+
+.pages-icon {
+  width: 100rpx;
+  height: 100rpx;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.pages-text-wrapper {
+  text-align: center;
+}
+
+.pages-text {
+  font-size: 35rpx;
+}
+
+.text-center_margin20 {
+  text-align: center;
+  margin: 20px;
+}
+
+.swiper-container swiper {
+  height: 440rpx;
+}
+
+.backgroud-image {
+  position: absolute;
+  width: 750rpx;
+  height: 440rpx;
+  z-index: -1;
+}
+
+.hightlight-color {
+  color: green;
+}
+
+.display-text {
+  margin-top: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  line-height: 150%;
+}
+
+.advice-desc {
+  font-size: 26rpx;
+  color: lightgray;
+}
+
+.enter {
+  font-size: 26rpx;
+  color: lightgray;
+  background: green;
+  border-radius: 60rpx;
+  padding: 0rpx 30rpx;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 20rpx;
+}
+
+.img-phone {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.telephone contact-button{
+  vertical-align: middle;
+}
+
+.telephone image{
+  vertical-align: middle;
+}

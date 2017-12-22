@@ -1,0 +1,52 @@
+<!--commumication.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="label-title">优惠套餐</view>
+    <text class="label-asfollow">具体业务如下</text>
+
+    <text class="lable-category1">业务一</text>
+    <text class="lable-category2">无线固话</text>
+
+    <text class="business-content">中移铁通31开头的固话号码，800元一个送一个话机，需要本人带身份证实名登记，一个证件只能办理一个，<text class="emphasize">25原套餐可以打230分钟，超出1毛</text>，限上海地区使用。
+    </text>
+
+    <text class="lable-category1">业务二</text>
+    <text class="lable-category2">联通不限时畅打套餐</text>
+
+    <text class="business-content">话机150元卡50元,<text class="emphasize">包月200元/月</text>，185开头的联通手机号码，需要上门拍照登记，每天限制打500次，每小时限打50次，话机需要连wifi配置，通话不走Wifi，所以联通手机信号没问题就没问题，限上海地区使用。
+    </text>
+
+    <text class="lable-category1">业务三</text>
+    <text class="lable-category2">电信低资费套餐</text>
+
+    <text class="business-content">全套218元 含一个座机 手机号码 资费：<text class="emphasize">8分~9分/分钟，有多种套餐供选择</text>，号码需要实名登记，以后自己充值就可以了。</text>
+    <text class="lable-category1">业务四</text>
+    <text class="lable-category2">联通包月号码</text>
+    <view class="select">
+      <view class="business-content" style="flex-direction:row;">
+        <view>
+          <view>
+          <text>199套餐，</text>
+          <text class="emphasize">电话任意打，流量随便用，还有靓号送</text>
+          <text>首次办理，需存1000元话费，办理只需要身份证照片，然后激活就可以用。</text>
+        </view>
+        </view>
+        <view>
+          <image style="width:50rpx;height:50rpx" src="http://106.14.176.248/kingman/telephoneBusiness/images/hot.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="contact">
+    <view class="telephone" bindtap="onDail">
+      <image class="img-phone" src="http://106.14.176.248/kingman/myApplication/images/icon_phone.png"></image>
+      <text>(微信同号)</text>
+      <text class="emphasize">173 2129 2727</text>
+    </view>
+    <view class="telephone" open-type="contact">
+      <contact-button type="default-light" size="30" session-from="weapp">
+      </contact-button>
+       <text session-from="weapp">客服</text>
+    </view>
+  </view>
+</view>

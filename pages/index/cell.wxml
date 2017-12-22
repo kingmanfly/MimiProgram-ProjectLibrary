@@ -1,0 +1,18 @@
+<template name="cell"> 
+ <navigator wx:if="{{!isTab}}" url="{{route}}" open-type="navigateTo" class="pages-item" style="height:{{cellHeight}}"> 
+  <view class="{{text==null||text.length==0?'pages-icon-wrapper-no-bg':'pages-icon-wrapper'}}" > 
+   <image src="{{icon}}" class="pages-icon"></image> 
+  </view> 
+  <view class="pages-text-wrapper"> 
+   <text class="pages-text">{{text}}</text> 
+  </view> 
+ </navigator> 
+ <navigator wx:else url="{{route}}" open-type="switchTab" class="pages-item" style="height:{{cellHeight}}"> 
+  <view class="{{text==null||text.length==0?'pages-icon-wrapper-no-bg':'pages-icon-wrapper'}}" > 
+   <image src="{{icon}}" class="pages-icon"></image> 
+  </view> 
+  <view class="pages-text-wrapper"> 
+   <text class="pages-text">{{text}}</text> 
+  </view> 
+ </navigator> 
+</template>

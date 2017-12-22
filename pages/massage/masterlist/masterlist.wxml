@@ -1,0 +1,34 @@
+<!--pages/masterlist/masterlist.wxml-->
+<import src="../projectlist/project-item/project-item-template.wxml" />
+
+<view class="detail">
+  <view class="detail_img">
+    <image mode="widthFix" src="http://106.14.176.248/kingman/massage/images/spa_detail1.png"></image>
+    <image mode="widthFix" src="http://106.14.176.248/kingman/massage/images/spa_detail2.png"></image>
+    <image mode="widthFix" src="http://106.14.176.248/kingman/massage/images//spa_detail3.png"></image>
+    <image mode="widthFix" src="http://106.14.176.248/kingman/massage/images//spa_detail4.png"></image>
+  </view>
+  <view class="info">
+    <view class="detail_content">
+      <view class="detail_left">
+        <text>暖心</text>
+        <text class="type">健康师</text>
+        <block wx:for="{{stars}}" wx:key="*this">
+          <image class="star-image" src="http://106.14.176.248/kingman/massage/images/star_yellow.png">
+          </image>
+        </block>
+      </view>
+      <text class="type">工号123456</text>
+    </view>
+    <text class="choose_num">{{choose_num}}人选择了TA</text>
+  </view>
+  <text class="master_dec">{{master_dec}}</text>
+</view>
+
+<view class="pro">
+  <view class="pro_line"></view>
+  <text>项目</text>
+</view>
+<view class="list" wx:for="{{massagists}}" wx:key="item">
+  <template is="projectItemTemplate" data="{{item}}" />
+</view>

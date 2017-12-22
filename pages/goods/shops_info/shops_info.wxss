@@ -1,0 +1,66 @@
+/* pages/goods/shops_info/shops_info.wxss */
+.header{
+    position:relative; 
+    height: 320rpx;
+}
+.header image{
+    position: absolute;
+    width: 100%;
+    height: 320rpx;
+    z-index: -1;
+}
+.header text{
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+    padding:10rpx;
+    margin:0px;
+    color: #fff;
+    background: #8e8e8e;
+    opacity:0.4;
+}
+.shop_info{
+    background: #fafafa;
+    padding: 20rpx;
+}
+.shop_info text{
+    font-size: 30rpx;
+}
+.icon_local{
+    width:10px;
+    height:15px;
+    padding-right: 10rpx; 
+}
+.shop__phone{
+    display: inline-flex;
+    align-items: center; 
+}
+.shop_dec{
+    color: #8e8e8e;
+    font-size: 25rpx;
+    line-height: 35rpx;
+}
+.shops_list{
+    border-top: 1px solid #8e8e8e;
+    font-size: 30rpx;
+}
+.shop_item{
+    display: flex;
+    justify-content: space-between;
+    /*border-bottom: 1px solid #8e8e8e; */
+    padding: 10px 10px 5px 10px;
+}
+.shop_item_address{
+    color: #8e8e8e;
+    padding: 0px 10px 10px 10px;
+    border-bottom: 1px solid #8e8e8e; 
+}
+.distance{
+    display: inline-flex;
+    align-items: center;
+}
+.icon_distance{
+    width:8px;
+    height:16px;
+    padding-right: 10rpx; 
+}

@@ -1,0 +1,90 @@
+
+<!--pages/goods/order_settlement/order_settlement.wxml-->
+<scroll-view>
+<!--<view class="view_outside">
+  <text class="view_in1">收货人</text>
+  <input class="view_in3" placeholder="名字"></input>
+</view>
+<view class="view_outside">
+  <text class="view_in1">联系电话</text>
+  <input class="view_in3" placeholder="手机或者固定电话"></input>
+</view>
+<view class="view_outside">
+  <text class="view_in1" bindtap="chooseAddress">收货地址</text>
+  <text class="view_in1">省份</text>
+  <text class="view_in1">城市</text>
+  <text class="view_in1">县区</text>
+</view>
+<view class="view_outside">
+  <text class="view_in1">详细地址</text>
+  <input class="view_in3" placeholder="街道门牌信息"></input>
+</view>
+<view class="view_outside">
+  <text class="view_in1">订货人电话</text>
+  <input class="view_in3" placeholder="手机或者固定电话"></input>
+</view>-->
+<view class="view_inside_address">
+<view class="view_in1" bindtap="chooseAddress">
+<view class="view_inside_order" style="padding-left:20px">
+  <text class="view_in1">收货人:{{userName}}</text>
+  <text class="view_in1">{{telNumber}}</text>
+  </view>
+<view class="view_inside_address">
+<image class="address_local" src="http://106.14.176.248/kingman/onlineFlower/images/icon_local.png"></image>
+<text style="padding-left:4rpx;margin-right:60rpx">收货地址:{{address}}</text>
+</view>
+</view>
+    <image class="more" src="http://106.14.176.248/kingman/onlineFlower/images//right.png"></image>
+</view>
+
+<view class="divide_line"></view>
+<view class="view_inside_order">
+  <image class="product_image" src="http://106.14.176.248/kingman/onlineFlower/images//white_rose.png"></image>
+  <view style="width:100%;position:relative">
+    <view>
+      <text class="product_name">白玫瑰</text>
+      <text class="price">￥99</text>
+    </view>
+    <view>
+      <text class="product_dec">新品一只</text>
+      <text class="number">X 1</text>
+    </view>
+  </view>
+</view>
+<view class="view_outside">
+  <text class="view_in1">备注</text>
+  <input class="view_in3" placeholder="点击给商家留言"></input>
+</view>
+<view class="view_outside">
+  <text class="view_in1">贺卡内容</text>
+  <input class="view_in3" placeholder="请输入您的贺卡内容"></input>
+</view>
+<view class="view_inside_order">
+  <text class="view_in1">商品金额</text>
+  <text class="order_amount">￥99.00</text>
+</view>
+<view class="view_outside" style="margin-top:-10px">
+  <text class="view_in1">运费金额</text>
+  <text class="order_amount">+￥0.00</text>
+</view>
+<view class="view_outside">
+  <text class="view_in1">实付金额</text>
+  <text class="order_amount">￥99.00</text>
+</view>
+<view class="divide_line"></view>
+<view class="view_outside" style="padding-bottom:10px">
+  <text class="view_in1">优惠</text>
+  <text class="order_amount">使用优惠</text>
+</view>
+<view class="divide_line"></view>
+<view class="view_outside">
+  <text class="view_in1">短信通知收件人</text>
+  <switch class="switch_style" type="switch" />
+</view>
+<view class="divide_line"></view>
+<view class="footer">
+  <text class="total">合计:</text>
+  <text class="view_in1">￥99.00</text>
+  <text class="submit_order_right" catchtap="pay">提交订单</text>
+</view>
+</scroll-view>

@@ -1,0 +1,81 @@
+<!--pages/goods/order_detail/order_detail.wxml-->
+<view class="address">
+  <image src="http://106.14.176.248/kingman/onlineFlower/images/icon_local.png"></image>
+  <view style="margin-top:-5px;margin-left:20rpx">
+    <view>
+      <text>王燕:12345678986</text>
+    </view>
+    <view>
+      <text>收货地址:上海市闵行区紫月路506号</text>
+    </view>
+  </view>
+  </view>
+
+  <view class="divide_line"></view>
+  <view class="view_inside_order">
+  <image src="http://106.14.176.248/kingman/onlineFlower/images/white_rose.png"></image>
+  <view style="width:100%;position:relative">
+    <view>
+      <text class="product_name">白玫瑰</text>
+      <text class="price">￥99</text>
+    </view>
+    <view>
+      <text class="product_dec">新品一只</text>
+      <text class="number">X 1</text>
+    </view>
+  </view>
+</view>
+<view class="view_outside">
+  <text class="view_in1">留言</text>
+  <text class="view_in3">无</text>
+</view>
+<view class="view_outside">
+  <text class="view_in1">贺卡内容</text>
+  <text class="view_in3">无</text>
+</view>
+<view class="view_inside_order">
+  <text class="view_in1">商品金额</text>
+  <text class="order_amount">￥99.00</text>
+</view>
+<view class="view_outside" style="margin-top:-10px">
+  <text class="view_in1">运费金额</text>
+  <text class="order_amount">+￥0.00</text>
+</view>
+<view class="view_outside">
+  <text class="view_in1">实付金额</text>
+  <text class="order_amount">￥99.00</text>
+</view>
+
+<view class="order_no">
+<view class="order_no_inside">
+  <text>订单编号：</text>
+  <text>E666666666666666</text>
+</view>
+<view class="order_no_inside">
+  <text>创建时间：</text>
+  <text>2017-6-15 12:00:00</text>
+</view>
+<view class="order_no_inside">
+  <text>付款时间：</text>
+  <text>2017-6-15 12:00:00</text>
+</view>
+</view>
+  <view class="divide_line"></view>
+<view class="order_status">
+  <text>订单状态：</text>
+  <text>等待商家发货</text>
+</view>
+
+<view class="order_track">
+    <text>买家付款</text>
+    <text>商家发货</text>
+    <text>交易完成</text>
+</view>
+<view class="order_track_line">
+    <image style="margin-left:40rpx" id="selected" src="http://106.14.176.248/kingman/onlineFlower/images/selected.png"></image>
+    <view class="track_line"></view>
+    <image id="point" src="http://106.14.176.248/kingman/onlineFlower/images/point.png"></image>
+    <view class="track_line"></view>
+    <image style="margin-right:40rpx" id="point"  src="http://106.14.176.248/kingman/onlineFlower/images/point.png"></image>
+</view>
+<text bindtap="aftersales" class="aftersales">申请售后</text>
